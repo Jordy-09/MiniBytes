@@ -6,7 +6,7 @@
   <title>Workshop boeken</title>
 
   <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/workshop.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,28 +14,40 @@
 
 </head>
 <body>
-<header class="sticky-header">
+<header class="workshop-header">
   <div class="header-content">
+    <div class="hamburger" id="hamburger">
+      <span id="hamburger-icon">☰</span>
+    </div>
     <div class="header-logo">
       <a href="index.html">
-      <img src="assets/logo.svg" alt="Logo MiniBytes" />
+        <img src="assets/logo.svg" alt="Logo MiniBytes" />
       </a>
     </div>
-    <nav class="nav-links">
-      <a href="#contact">contact</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="workshop.html">Workshops</a>
       <a href="#overons">Team</a>
-      <a href="workshop.html">workshops</a>
+      <a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
 
-  <div class="hero">
-    <h1>Workshop: Bouw je eigen game!</h1>
-    <p>In deze workshop leren we brugklassers hoe ze met eenvoudige code hun eigen game maken – super leuk én leerzaam!</p>
-    <p><strong>Voor wie?</strong> Brugklassers (12-13 jaar)<br>
-    <strong>Duur:</strong> 2 uur<br>
-    <strong>Benodigdheden:</strong> Laptop of Chromebook</p>
-    <a href="#" class="cta-button">Reserveer je plekje</a>
+<main>
+  <div class="main-container">
+    <div class="workshop-firstView">
+      <h1>Leer coderen in kleine hapjes!</h1>
+      <picture>
+        <source media="(max-width: 520px)" srcset="assets/workshopMobileBytes.svg" />
+        <img src="assets/workshopBytes.svg" alt="bytes" />
+      </picture>
+    </div>
   </div>
+</main>
+
+
+
+
+
 </body>
+  <script src="js/script.js"></script>
 </html>
