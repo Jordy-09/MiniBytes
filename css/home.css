@@ -3,6 +3,7 @@ body {
   color: #FFFFFF;
   line-height: 1.6;
   overflow-x: hidden;
+  min-width: 100vw;
 }
 
 .header {
@@ -110,7 +111,7 @@ main{
 .main-container {
   /* background-color: #de1010; */
   margin: 0 auto;
-  margin: 0 50px 0 50px; 
+  /* margin: 0 50px 0 50px;  */
 }
 
 .main-content {
@@ -130,6 +131,219 @@ main{
   font-size: 3em;
   margin-bottom: 20px;
 }
+
+.about-section{
+  background-color: white;
+}
+
+.about{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  
+  padding: 30px 100px;
+  
+  gap: 100px; 
+}
+
+.a{order: 1;}
+.b{order: 2;}
+.c{order: 3;}
+.d{order: 4;}
+
+.about1{
+  max-width: 600px;
+  width: 100%;
+  /* margin: 0 100px; */
+}
+
+
+
+.about-title {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 25;
+  font-style: normal;
+  font-size: 25px;
+  margin-bottom: 20px;
+} 
+
+.about-content {
+  font-family: "Cascadia Code", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20PX;
+  
+}
+
+.about img{
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+.video-section{
+  padding: 100px;
+  margin: 0 auto;
+
+}
+
+.video-text{
+    margin-bottom: 100px;
+
+
+}
+
+.video-text h2{
+
+
+  padding: 30px 100px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.video-text p{
+ max-width: 800px;
+ 
+  margin: 0 auto;
+  
+  
+ 
+ 
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "cascadia code", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.videoplayer img{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  
+ 
+ 
+ 
+}
+
+.workshops{
+background-color: white;
+padding: 100px;
+margin: 0 auto
+}
+
+.workshops-intro h2{
+  padding: 30px 100px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.workshops-intro p{
+  max-width: 700px;
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: "cascadia code", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.workshop-cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  
+ 
+  
+  gap: 50px;
+}
+
+.workshop-card {
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0px 20px 20px;
+  position: relative;
+  width: 375px;
+  min-width: 375px;
+  height: 548px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.red{
+background-image: url('../assets/Group 103.png');
+}
+
+.blue{
+background-image: url('../assets/Group 105.png');
+}
+
+.yellow{
+background-image: url('../assets/Group 104.png');
+
+}
+
+.workshop-card h3{
+
+  color: #000000;
+  text-align: center;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  padding : 20px;
+  width: 50%;
+    margin: 0 auto;
+}
+
+.workshop-card p{
+  color: #000000;
+  
+  font-family: "cascadia code", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 20px
+  
+}
+
+
+.workshop-image {
+  display: flex;
+  justify-content: center;
+  /* transform: scale(0.9); */
+  margin-bottom: 30px;
+  margin-left: 25px;
+  
+}
+
+  
+  
+
+
 
 .uitleg-code {
   font-family: "Press Start 2P", system-ui;
@@ -163,7 +377,7 @@ main{
   
 } */
 
-footer {
+/* footer {
   background-color: #cac8c8;
   height: 20vh;
   width: 100%;
@@ -181,10 +395,48 @@ footer:before{
   height: 28px;
   background-image: url('../assets/grijzeFooter.svg');
   background-size: 1488px 28px;
+} */
+
+
+@media (max-width: 920px) {
+
+  .about {
+  padding: 30px 50px;
+  flex-direction: column;
+  min-width: 340px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+
 }
 
+.a{order: 1;}
+.b{order: 2;}
+.c{order: 4;}
+.d{order: 3;}
 
-@media (max-width: 520px) {
+
+}
+
+@media (max-width: 700px) {
+
+
+
+
+
+  .video-section{
+    padding: 50px 20px;
+    
+
+
+
+  }
+  .video-text{
+    padding: 0 10px;
+  }
+  .video-text p {
+    padding: 0 30px;
+  }
+
   .header {
     height: 10vh;
     margin-bottom: 10px;
@@ -239,5 +491,6 @@ footer:before{
     margin: 0;
   }
 }
+
 
 

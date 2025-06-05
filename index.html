@@ -1,56 +1,166 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MiniBytes</title>
-
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/style.css" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
-  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/home.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<header class="header">
-  <div class="header-content">
-    <div class="hamburger" id="hamburger">
-      <span id="hamburger-icon">☰</span>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <div class="hamburger" id="hamburger-icon">&#9776;</div>
+      <div class="header-logo">
+        <img src="logo.png" alt="MiniBytes Logo" />
+      </div>
+      <nav class="nav-links" id="nav-links">
+        <a href="#team">Team</a>
+        <a href="#about">Over ons</a>
+        <a href="#workshops">Workshops</a>
+      </nav>
     </div>
-    <div class="header-logo">
-      <a href="index.html">
-        <img src="assets/logo.svg" alt="Logo MiniBytes" />
-      </a>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="main-container">
+      <section class="main-content">
+        <h1>Leer coderen in <br> kleine hapjes!</h1>
+        <p class="uitleg-code">Toegankelijke workshops voor kinderen, studenten en nieuwsgierigen.</p>
+      </section>
+
+      <!-- Waarom MiniBytes -->
+
+      <section class="about-section">
+        <section class="about" id="about">
+          <div class="about1 a">
+            <h2 class="about-title">Waarom MiniBytes?</h2>
+            <p class="about-content">
+              Wij als MiniBytes zetten ons in voor de nieuwe generatie van digitale creatievelingen. Wij willen, door
+              middel van onze workshops, kinderen van alle leeftijden bewust maken van het belang van code en hen op een
+              speelse en creatieve manier kennis laten maken met het vak. Coderen hoeft niet lastig te zijn, als je het
+              leert in kleine hapjes!
+            </p>
+          </div>
+          <img class=" b" src="assets/Group 92.png" alt="Teamlid presenteert">
+        </section>
+
+        <!-- Quote -->
+        <section class="about about-second-row">
+
+          <img class="c" src="assets/Group 93.png" alt="Anette de Bie">
+          <div class="about1 d">
+            <h2 class="about-title">Code om ons heen</h2>
+            <p class="about-content">Wij leven in een wereld, waarin vrijwel alles gerund wordt door code. Van je
+              wekker, tot aan de verkeerslichten op straat. En wat dacht je van het digibord in je klaslokaal? Code is
+              op zijn simpelst gezegd, een reeks instructies die een computer vertelt wat hij moet doen. Het is overal,
+              je kunt er niet aan ontsnappen. En waarom zou je dat ook willen?
+              </p>
+            <br>
+            <p class="about-content">
+              Wist je dat het leren van code waardevolle vaardigheden met zich meebrengt?  Het is meer dan alleen
+              cijfertjes en lettertjes. Het bevordert het probleem-oplossingsvermogen, rekenskills, de creativiteit en
+              nog veel meer. Jouw fantasie is de limiet!
+            </p>
+          </div>
+
+        </section>
+      </section>
+
+      <!-- Video/Resultaten -->
+
+      <section class="video-section">
+        <section class="video-text">
+        <h2 >Nog niet overtuigd?</h2>
+        <p>Bekijk onze mini-docu, waarin wij met de hulp van Gaby Dingena, Ontwikkelaar Team Student Connect SSC op Maastricht University, en Iris Aniba, docent op het Bernard Lievegoed College in Maastricht, onderzoek doen naar het belang van het leren coderen.</p>
+        </section>
+        <div class="videoplayer">
+          <img src="assets/Group 95.png" alt="">
+        </div>
+      
+      </section>
+
+      <!-- Workshops -->
+      <section class="workshops">
+
+        <section class="workshops-intro">
+        <h2>Onze workshops</h2>
+        <p>Steeds meer scholen en organisaties beginnen het belang van code in te zien. Daarom zijn wij als MiniBytes op steeds meer plekken te vinden! Hieronder vindt je de workshops die wij aanbieden, net als leuke beelden en resultaten van voorgaande workshops.</p>
+        </section>
+      
+        <section class="workshop-cards">
+        <div class="workshop-card red">
+          <!-- <img src="assets/Group 103.png" alt=""> -->
+          <h3>Lego Robots</h3>
+          <div class="workshop-image ">
+            <img src="assets/Vector.png" alt="">
+          </div>
+          <p>Maak met behulp van je laptop een eigen Lego-robot, die je zelf kunt aansturen en obstakels kan laten overbruggen! </p>
+        </div>
+
+        <div class="workshop-card yellow">
+          <!-- <img src="assets/Group 103.png" alt=""> -->
+          <h3>Op Pad met Code</h3>
+          <div class="workshop-image">
+            <img src="assets/Vector.png" alt="">
+          </div>
+          <p>Op Pad Met Code neemt je mee in de wereld van P5.js! leer in 3 uurtjes hoe je creatief te werk gaat met code.</p>
+        </div>
+
+        <div class="workshop-card blue">
+          <!-- <img src="assets/Group 103.png" alt=""> -->
+          <h3>Arcade Games</h3>
+          <div class="workshop-image">
+            <img src="assets/Vector.png" alt="">
+          </div>
+          <p>Maak je eigen arcadegame! Met deze workshop gaan we met P5.js aan de slag om een eigen spel te maken.</p>
+        </div>
+        </section>
+      </section>
+
+      
+
+      <!-- Team -->
+      <section id="team">
+        <h2>Meet the team</h2>
+        <ul>
+          <li>Job de Groot</li>
+          <li>Jorijs Frijters</li>
+          <li>Fienne Hidens</li>
+          <li>Sophie Pogrzeba</li>
+        </ul>
+      </section>
     </div>
-    <nav class="nav-links" id="navLinks">
-      <a href="workshop.html">Workshops</a>
-      <a href="#overons">Team</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+  </main>
 
-<main>
-  <div class="main-container">
-    <div class="firstView">
-      <h1>Leer coderen in kleine hapjes!</h1>
-      <picture>
-        <source media="(max-width: 520px)" srcset="assets/mobileBytes.svg" />
-        <img src="assets/bytes.svg" alt="bytes" />
-      </picture>
+  <!-- Footer -->
+  <!-- <footer>
+    <div class="footer-content">
+      <p>Wij zijn overal te vinden!</p>
+      <div class="socials">
+        <a href="#">📷 Instagram</a>
+        <a href="#">🐦 Twitter</a>
+        <a href="#">📘 Facebook</a>
+      </div>
+      <small>Bezoek onze socials</small>
     </div>
-  </div>
-</main>
+  </footer> -->
 
-<!-- <img src="assets/slideImage.svg" alt="artboard" class="slide-image"> -->
+  <!-- JavaScript voor hamburger-menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger-icon');
+    const navLinks = document.getElementById('nav-links');
 
-
-  <footer>
-  </footer>
-
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
 </body>
-  <script src="js/script.js"></script>
+
 </html>
