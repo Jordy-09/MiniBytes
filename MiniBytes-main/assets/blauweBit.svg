@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 29.5.1, SVG Export Plug-In . SVG Version: 9.03 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY st0 "fill:#63A6CC;">
+	<!ENTITY st1 "fill:#2B2B2B;">
+	<!ENTITY st2 "fill:#387BBF;">
+	<!ENTITY st3 "fill:#1F4E9E;">
+]>
+<svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<rect x="150" y="100" style="&st0;" width="250" height="250"/>
+<rect x="306.25" y="175" style="&st1;" width="18.75" height="37.5"/>
+<rect x="225" y="175" style="&st1;" width="18.75" height="37.5"/>
+<rect x="310.94" y="190.62" style="&st0;" width="9.38" height="18.75"/>
+<rect x="229.69" y="190.62" style="&st0;" width="9.38" height="18.75"/>
+<path style="&st2;" d="M450,150v-50V50h-50h-50V0h-50h-50h-50v50h-50h-50v50H50v50v50h50v50v50v50v50h50h50v50h-50v50h50h50v-50v-50
+	h50v50v50h50h50v-50h-50v-50h50h50v-50v-50v-50h50v-50v-50H450z M400,300v50h-50h-50h-50h-50h-50v-50v-50v-50v-50v-50h50h50h50h50
+	h50v50v50v50V300z"/>
+<g>
+	<rect x="50" y="50" style="&st3;" width="50" height="50"/>
+	<polygon style="&st3;" points="250,400 250,450 250,500 300,500 300,450 300,400 	"/>
+	<rect x="150" y="400" style="&st3;" width="50" height="50"/>
+	<rect x="100" y="450" style="&st3;" width="50" height="50"/>
+	<polygon style="&st3;" points="50,100 0,100 0,150 0,200 50,200 50,150 	"/>
+	<polygon style="&st3;" points="50,300 50,350 50,400 100,400 100,350 100,300 100,250 100,200 50,200 50,250 	"/>
+	<rect x="150" style="&st3;" width="50" height="50"/>
+</g>
+</svg>
