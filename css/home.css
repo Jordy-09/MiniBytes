@@ -107,6 +107,7 @@ main{
   width: 100%;
   height: 100vh;
   position: relative;
+  
 }
 .main-container {
   /* background-color: #de1010; */
@@ -116,21 +117,38 @@ main{
 
 .main-content {
   /* background-color: chartreuse; */
-  max-width: 900px;
+  
   width: 100%;
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  margin-top: 300px;
+  /* padding-top: 100px; */
+  padding-bottom: 200px;
+  background-image: url('../assets/Group 70.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
 }
 
 .main-content h1 {
+  margin: 0 auto;
+  max-width: 900px;
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
-  font-size: 3em;
-  margin-bottom: 20px;
+  font-size: 80px;
+  /* margin-bottom: 250px; */
+ 
 }
+
+
+.main-image{
+  width: 100%;
+  position: absolute;
+  top: 200px;
+}
+
 
 .about-section{
   background-color: white;
@@ -236,9 +254,9 @@ main{
 }
 
 .workshops{
-background-color: white;
-padding: 100px;
-margin: 0 auto
+  background-color: white;
+  /* padding: 100px; */
+  margin: 0 auto
 }
 
 .workshops-intro h2{
@@ -250,6 +268,7 @@ margin: 0 auto
   font-style: normal;
   font-size: 25px;
   margin-bottom: 20px;
+  padding: 50px 100px;
 }
 
 .workshops-intro p{
@@ -263,18 +282,19 @@ margin: 0 auto
   font-size: 20px;
   margin-bottom: 20px;
 }
-
-.workshop-cards{
+.workshop-cards {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  color: black;
-  
- 
-  
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
   gap: 50px;
+  padding: 10px;
+}
+
+.workshop-card {
+  scroll-snap-align: center;
+  flex: 0 0 auto;
 }
 
 .workshop-card {
@@ -340,7 +360,68 @@ background-image: url('../assets/Group 104.png');
   
 }
 
+
+
+.team h2{
+
+  padding: 30px 100px;
+  text-align: center;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  margin-bottom: 20px;
+
+}
+
+
+.team p{
+  max-width: 700px;
+  margin: 0 auto;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "cascadia code", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.team-card {
+  flex: 0 1 calc(50% - 20px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+
+
   
+.team-card p {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  padding: 30px;
+
+
+}
+
+.team-card img{
+  max-width: 200px;
+
+
+
+}
   
 
 
@@ -421,6 +502,81 @@ footer:before{
 
 
 
+  
+  .workshops{
+    
+
+
+  }
+
+  .workshops-intro{
+    padding: 0 50px;
+  }
+
+  .workshop-card {
+    /* width: 212px;
+    min-width: 212px;
+    height: 275px; */
+  }
+/* 
+  .workshop-card h3{
+    font-size: 16px;
+    padding : 0px;
+    width: 50%;
+    margin: 0 auto;
+  }
+ 
+  .workshop-card p{
+    font-size: 12px;
+    
+    padding: 10px
+    
+    
+  
+    
+  } 
+
+
+  .workshop-image {
+    max-width: 180px;
+    
+  }
+
+   
+  .workshop-image {
+    display: flex;
+    justify-content: center;
+    transform: scale(0.9);
+    margin-bottom: 30px;
+    margin-left: 25px;
+    
+  } */
+
+
+  .workshop-card{
+    scale: 0.7 ;
+    margin-right: -120px;
+    
+  }
+
+
+  
+
+  
+
+  .team-card img{
+    max-width: 120px;
+
+
+  }
+
+  
+  .team p{
+    padding: 20px 50px;
+
+  }
+
+
 
 
   .video-section{
@@ -434,7 +590,7 @@ footer:before{
     padding: 0 10px;
   }
   .video-text p {
-    padding: 0 30px;
+    padding: 0 50px;
   }
 
   .header {
@@ -487,10 +643,9 @@ footer:before{
     display: flex;
   }
   .main-content h1 {
-    font-size: 1.5em;
+    font-size:35px;
     margin: 0;
   }
 }
-
 
 
