@@ -14,7 +14,7 @@
   hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('show');
 
-    // Toggle het icoon tussen ☰ en ✕
+    // Toggle tussen ☰ en ✕
     if (navLinks.classList.contains('show')) {
       hamburgerIcon.textContent = '✕';
     } else {

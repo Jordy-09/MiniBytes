@@ -1,7 +1,18 @@
 /* Homepage CSS */
+
+:root {
+  --geel: #fcc10a;
+  --rood: #ea5b3a;
+  --blauw: #387BBF;
+  --donkerblauw: #34383D;
+  --wit: white;
+  --grijs: #e8e8e8;
+}
+
+
 body {
-  background-color: #34383D;
-  color: #FFFFFF;
+  background-color: var(--donkerblauw);
+  color: var(--wit);
   line-height: 1.6;
   overflow-x: hidden;
   min-height: 100vh;
@@ -10,7 +21,7 @@ body {
 }
 
 .header {
-  background-color: #fcc10a;
+  background-color: var(--geel);
   height: 10vh;
   width: 100%;
   position: fixed;
@@ -31,6 +42,7 @@ body {
   height: 28px;
   background-image: url('../assets/geleHeader.svg');
   background-size: 1488.1907px 28px;
+
   z-index: 999;
 }
 
@@ -78,14 +90,14 @@ body {
 .nav-links a {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
-  color: #34383D;
+  color: var(--donkerblauw);
   text-decoration: none;
   font-size: 1em;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #34383D;
+  color: var(--donkerblauw);
   transform: scale(1.1);
 }
 
@@ -93,7 +105,7 @@ body {
   display: none;
   font-size: 2em;
   cursor: pointer;
-  color: #34383D;
+  color: var(--donkerblauw);
   user-select: none;
   position: absolute;
   right: 20px;
@@ -119,7 +131,6 @@ main{
 .main-container {
   /* background-color: #de1010; */
   margin: 0 auto;
-  /* margin: 0 50px 0 50px;  */
 }
 
 .firstView {
@@ -152,7 +163,7 @@ main{
 
 
 .about-section{
-  background-color: white;
+  background-color: var(--wit);
 }
 
 .about{
@@ -160,10 +171,8 @@ main{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  color: black;
-  
+  color: var(--donkerblauw);
   padding: 30px 100px;
-  
   gap: 100px; 
 }
 
@@ -205,20 +214,15 @@ main{
 .video-section{
   padding: 100px;
   margin: 0 auto;
-
 }
 
 .video-text{
     margin-bottom: 100px;
-
-
 }
 
 .video-text h2{
-
-
   padding: 30px 100px;
-  color: rgb(255, 255, 255);
+  color: var(--wit);
   text-align: center;
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
@@ -228,14 +232,9 @@ main{
 }
 
 .video-text p{
- max-width: 800px;
- 
+  max-width: 800px;
   margin: 0 auto;
-  
-  
- 
- 
-  color: rgb(255, 255, 255);
+  color: var(--wit);
   text-align: center;
   font-family: "cascadia code", system-ui;
   font-weight: 400;
@@ -248,21 +247,17 @@ main{
   width: 100%;
   height: auto;
   margin: 0 auto;
-  
- 
- 
- 
 }
 
 .workshops{
-  background-color: white;
+  background-color: var(--wit);
   /* padding: 100px; */
   margin: 0 auto
 }
 
 .workshops-intro h2{
   padding: 30px 100px;
-  color: rgb(0, 0, 0);
+  color: var(--donkerblauw);
   text-align: center;
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
@@ -275,7 +270,7 @@ main{
 .workshops-intro p{
   max-width: 700px;
   margin: 0 auto;
-  color: rgb(0, 0, 0);
+  color: var(--donkerblauw);
   text-align: center;
   font-family: "cascadia code", system-ui;
   font-weight: 400;
@@ -299,7 +294,6 @@ main{
 }
 
 .workshop-card {
-  
   background-size: cover;
   background-repeat: no-repeat;
   padding: 100px 0px 20px 20px;
@@ -328,7 +322,7 @@ background-image: url('../assets/Group 104.png');
 
 .workshop-card h3{
 
-  color: #000000;
+  color: var(--donkerblauw);
   text-align: center;
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
@@ -340,8 +334,7 @@ background-image: url('../assets/Group 104.png');
 }
 
 .workshop-card p{
-  color: #000000;
-  
+  color: var(--donkerblauw);
   font-family: "cascadia code", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -350,7 +343,6 @@ background-image: url('../assets/Group 104.png');
   padding: 20px
   
 }
-
 
 .workshop-image {
   display: flex;
@@ -361,10 +353,7 @@ background-image: url('../assets/Group 104.png');
   
 }
 
-
-
 .team h2{
-
   padding: 30px 100px;
   text-align: center;
   font-family: "Press Start 2P", system-ui;
@@ -377,9 +366,9 @@ background-image: url('../assets/Group 104.png');
 
 
 .team p{
+  color: var(--wit);
   max-width: 700px;
   margin: 0 auto;
-  color: rgb(255, 255, 255);
   text-align: center;
   font-family: "cascadia code", system-ui;
   font-weight: 400;
@@ -440,7 +429,7 @@ background-image: url('../assets/Group 104.png');
   left: 0;
   bottom: 0;
   transition: 4000ms ease bottom;
-  background: green;
+  /* background: green; */
 }
 
 
@@ -474,9 +463,9 @@ footer {
   bottom: 0;
   width: 100%;
   height: 30vh;
-  background-color: #E7E7E8;
-  color: #34383D;
-  padding: 40px 0 20px 0;
+  background-color: var(--grijs);
+  color: var(--donkerblauw);
+  padding: 20px 0 40px 0;
   z-index: 100;
   box-shadow: 0 -2px 16px rgba(0,0,0,0.07);
 }
@@ -491,11 +480,11 @@ footer::before {
   height: 85.1608px;
   background-image: url('../assets/footerBytes.svg');
   background-size: 1488.1907px 85.1608px;
-  background-repeat: no-repeat;
+  background-position-x: center;
   z-index: 101;
 }
 
-.footer-content {
+footer {
   max-width: 100vw;
 }
 
@@ -519,7 +508,7 @@ footer::before {
 
 .footer-locatie-box {
   font-family: "Cascadia Code", system-ui;
-  color: #34383D;
+  color: var(--donkerblauw);
   font-size: 1em;
   text-align: left;
   display: flex;
@@ -529,7 +518,7 @@ footer::before {
 
 .footer-copyright-box {
   font-family: "Cascadia Code", system-ui;
-  color: #34383D;
+  color: var(--donkerblauw);
   font-size: 0.8em;
   text-align: left;
   margin-top: 20px;
@@ -537,6 +526,7 @@ footer::before {
 
 .footer-social-box {
   font-family: "Press Start 2P", system-ui;
+  color: var(--donkerblauw);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -545,60 +535,35 @@ footer::before {
 }
 
 .footer-social-text {
-  margin-bottom: 0;
+  margin: 20px 0 20px 0;
 }
 
 .footer-social-icons {
-  fill: #34383D;
+  fill: var(--donkerblauw);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: left;
-  gap: 60px;
+  gap: 30px;
   max-width: 50px;
   height: auto;
   }
 
 
 
-@media (max-width: 700px) {
-  .footer-content {
-    padding: 0 20px;
-  }
-  .footer-social-box {
-    flex-direction: column;
-    gap: 18px;
-    padding: 24px 10px;
-  }
-  .footer-social-icons {
-    gap: 18px;
-  }
-  .footer-social-icons img {
-    width: 32px;
-    height: 32px;
-  }
-}
 
-@media (max-width: 900px) {
-  .footer-flex-row {
-    flex-direction: column;
-    gap: 24px;
-    align-items: flex-start;
-  }
-  .footer-locatie-box {
-    min-width: unset;
-    width: 100%;
-    padding: 18px 12px;
-  }
-  .footer-social-box {
-    max-width: unset;
-    width: 100%;
-  }
-}
 
+
+
+
+
+
+
+
+  
 /* Workshop page CSS */
 .workshop-header {
-  background-color: #ea5b3a;
+  background-color: var(--rood);
   height: 10vh;
   width: 100%;
   position: fixed;
@@ -625,10 +590,32 @@ footer::before {
   transform: translateY(-100%);
 }
 
+.workshop-nav-links {
+  display: flex;
+  gap: 60px;
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.workshop-nav-links a {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  color: var(--donkerblauw);
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.workshop-nav-links a:hover {
+  color: var(--donkerblauw);
+  transform: scale(1.1);
+}
 
 .workshop-firstView {
   /* background-color: chartreuse; */
-  max-width: 900px;
+  max-width: 1000px;
   width: 100%;
   height: 100vh;
   text-align: center;
@@ -638,21 +625,142 @@ footer::before {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  padding-bottom: 30px;
   bottom: -10px;
 }
 
-.workshop-firstView h1 {
+.workshop-firstView-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.workshop-firstView-text h1 {
   font-family: "Press Start 2P", system-ui;
   font-size: 3em;
   margin-bottom: auto;
-  margin-top: 300px;
+}
+
+.workshop-firstView-text p {
+  font-family: "Cascadia Code", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+  max-width: 70%;
+  margin-top: 40px;
+}
+
+.workshop-firstView-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .workshop-firstView img {
   height: auto;
   width: 100vw;
 }
+
+.blok1 { background-color: var(--grijs); }
+.blok2 { background-color: var(--geel); }
+.blok3 { background-color: var(--blauw); }
+.blok4 { background-color: var(--grijs); }
+
+.blok1-schaduw { background-color: #cac9c9; }
+.blok2-schaduw { background-color: #f7a62e; }
+.blok3-schaduw { background-color: #1f4e9e; }
+.blok4-schaduw { background-color: #cac9c9; }
+
+.blok1, .blok2, .blok3, .blok4 {
+  margin: 50px 0 50px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
+  width: auto;
+  padding: 0 20px 0 0;
+}
+
+.blok1-schaduw, .blok2-schaduw, .blok3-schaduw, .blok4-schaduw {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 30px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.blok1-tekst, .blok2-tekst, .blok3-tekst, .blok4-tekst {
+  font-family: "press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.7em;
+  color: var(--donkerblauw);
+  text-align: left;
+  flex: 1 1 0%;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.download img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: auto;
+  margin-bottom: -120px;
+}
+
+/* Uitleg Workshop */
+.workshop-content {
+  background-color: var(--wit);
+  padding: 50px 0;
+  margin-top: 2.5px;
+}
+
+.workshop-content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.workshop-content h2 {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  color: var(--donkerblauw);
+  margin-bottom: 20px;
+}
+.workshop-content p {
+  font-family: "Cascadia Code", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+  color: var(--donkerblauw);
+  margin-bottom: 30px;
+}
+
+.workshop-content-image {
+  margin-top: 30px;
+}
+
+.workshop-content-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -689,7 +797,7 @@ footer::before {
   .header-logo img {
     max-width: 200px;
     margin-top: 10px;
-    }
+  }
 
   .nav-links a {
     font-size: 1em;
@@ -705,7 +813,7 @@ footer::before {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-color: #fcc10a;
+    background-color: var(--geel);
     position: fixed;
     top: 0;
     left: 0;
@@ -739,15 +847,15 @@ footer::before {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
     bottom: -10px;
     text-align: center;
   }
 
   .firstView h1 {
+    font-family: "Press Start 2P", system-ui;
     font-size: 2em;
-    margin-top: 200px;
+    margin-bottom: auto;
   }
 
   /* .workshops{
@@ -799,8 +907,6 @@ footer::before {
 
   .team-card img{
     max-width: 120px;
-
-
   }
   
   .team p{
@@ -819,5 +925,172 @@ footer::before {
   .video-text p {
     padding: 0 50px;
   } 
-}
 
+
+  /* Footer CSS */
+  footer {
+    max-width: 100vw;
+    height: auto;
+    padding: 24px 0 100px 0;
+  }
+
+  .footer-flex-row {
+    flex-direction: column;
+    gap: 15px;
+    max-width: 100vw;
+    align-items: center;
+  }
+
+  .footer-logo img {
+    width: 160px;
+    margin-left: 0;
+  }
+
+  .footer-locatie-box {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 0.95em;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  .footer-copyright-box {
+    margin-top: 20px;
+    font-size: 0.7em;
+    text-align: center;
+  }
+
+  .footer-social-box {
+    width: 100%;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .footer-social-text {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .footer-social-icons {
+    gap: 18px;
+    justify-content: center;
+    max-width: 100vw;
+    text-align: center;
+  }
+  .footer-social-icons img {
+    width: 32px;
+    height: 32px;
+  }
+
+
+
+
+
+  /* workshop CSS */
+  .workshop-header {
+    background-color: var(--rood);
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    transform: translateY(0);
+    transition: transform 0.4s ease-in-out;
+    will-change: transform;
+    top: 0;
+    left: 0;
+  }
+  .workshop-header::after {
+    content: '';
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    background-image: url('../assets/rodeHeader.svg');
+    background-size: 1488.1907px 28px;
+    z-index: 999;
+  }
+  .workshop-header.hide {
+    transform: translateY(-100%);
+  }
+
+  .workshop-nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--rood);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; 
+    width: 100vw;  
+    padding-top: 120px; 
+    gap: 40px; 
+    z-index: 1000;
+  }
+  .workshop-nav-links.show {
+    display: flex;
+    animation: slideDownHamburger 0.4s ease forwards;
+  }
+  .workshop-nav-links a {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    color: var(--donkerblauw);
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+  }
+  .workshop-nav-links a:hover {
+    color: var(--donkerblauw);
+    transform: scale(1.1);
+  }
+
+  .workshop-firstView {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: -10px;
+    text-align: center;
+  }
+
+  .workshop-firstView-text h1 {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 2em;
+    margin-bottom: auto;
+    max-width: 80%;
+  }
+  .workshop-firstView-text p {
+    font-family: "Cascadia Code", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8em;
+    max-width: 70%;
+    margin-top: 40px;
+  }
+
+  .workshop-firstView img {
+    height: auto;
+    width: 100vw;
+  }
+
+  /* Info Blokken */
+  .blok1, .blok2, .blok3, .blok4 {
+    flex-direction: row;
+    align-items: center;
+  }
+  .blok1-schaduw, .blok2-schaduw, .blok3-schaduw, .blok4-schaduw {
+    width: 70%;
+    height: 40px;
+    margin-right: 0;
+  }
+  .blok1-tekst, .blok2-tekst, .blok3-tekst, .blok4-tekst {
+    font-size: 0.7em;
+    text-align: center;
+  }
+  .download img {
+    width: 80%;
+    height: auto;
+    margin-bottom: -100px;
+  }
+}
