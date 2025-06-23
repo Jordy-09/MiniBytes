@@ -421,16 +421,6 @@ background-image: url('../assets/Group 104.png');
   font-size: 1em;
 }
 
-.slide-image{
-  position: absolute;
-  width: 100vw;
-  height: 75vh;
-  z-index: 1001;
-  left: 0;
-  bottom: 0;
-  transition: 4000ms ease bottom;
-  /* background: green; */
-}
 
 
 @keyframes slideDownHeader {
@@ -547,7 +537,13 @@ footer {
   gap: 30px;
   max-width: 50px;
   height: auto;
-  }
+}
+
+.footer-social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
 
 
 

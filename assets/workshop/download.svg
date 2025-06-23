@@ -1,29 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Laag_2" data-name="Laag 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.39 56.69">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #c0422d;
-      }
-
-      .cls-2 {
-        fill: #1d1d1b;
-        font-family: PressStart2P-Regular, 'Press Start 2P';
-        font-size: 10px;
-      }
-
-      .cls-3 {
-        fill: #eb5b3a;
-      }
-    </style>
-  </defs>
-  <g id="Laag_1-2" data-name="Laag 1">
-    <g>
-      <rect class="cls-1" x="14.17" y="42.52" width="14.17" height="14.17"/>
-      <rect class="cls-1" x="14.17" width="14.17" height="14.17"/>
-      <polygon class="cls-1" points="14.17 14.17 0 14.17 0 28.35 0 42.52 14.17 42.52 14.17 28.35 14.17 14.17"/>
-    </g>
-    <polygon class="cls-3" points="99.21 14.17 99.21 0 85.04 0 70.87 0 56.69 0 42.52 0 28.35 0 28.35 14.17 14.17 14.17 14.17 28.35 14.17 42.52 28.35 42.52 28.35 56.69 42.52 56.69 56.69 56.69 70.87 56.69 85.04 56.69 99.21 56.69 99.21 42.52 113.39 42.52 113.39 28.35 113.39 14.17 99.21 14.17"/>
-    <text class="cls-2" transform="translate(23.24 28.03)"><tspan x="0" y="0">Download </tspan><tspan x="5" y="14">content</tspan></text>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 29.5.1, SVG Export Plug-In . SVG Version: 9.03 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY st0 "fill:#C0422D;">
+	<!ENTITY st1 "fill:#EB5B3A;">
+	<!ENTITY st2 "enable-background:new    ;">
+	<!ENTITY st3 "fill:#1D1D1B;">
+]>
+<svg version="1.1" id="Laag_2_00000034081596002472177690000012800414646742654383_"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 113.39 56.69"
+	 style="enable-background:new 0 0 113.39 56.69;" xml:space="preserve">
+<g id="Laag_1-2">
+	<g>
+		<rect x="14.17" y="42.52" style="&st0;" width="14.17" height="14.17"/>
+		<rect x="14.17" style="&st0;" width="14.17" height="14.17"/>
+		<polygon style="&st0;" points="14.17,14.17 0,14.17 0,28.35 0,42.52 14.17,42.52 14.17,28.35 		"/>
+	</g>
+	<polygon style="&st1;" points="99.21,14.17 99.21,0 85.04,0 70.87,0 56.69,0 42.52,0 28.35,0 28.35,14.17 14.17,14.17 14.17,28.35 
+		14.17,42.52 28.35,42.52 28.35,56.69 42.52,56.69 56.69,56.69 70.87,56.69 85.04,56.69 99.21,56.69 99.21,42.52 113.39,42.52 
+		113.39,28.35 113.39,14.17 	"/>
+	<g style="&st2;">
+		<path style="&st3;" d="M23.24,26.78v-8.75h6.25v1.25h1.25v1.25h1.25v3.75h-1.25v1.25h-1.25v1.25H23.24z M25.74,25.53h2.5v-1.25
+			h1.25v-3.75h-1.25v-1.25h-2.5V25.53z"/>
+		<path style="&st3;" d="M34.49,26.78v-1.25h-1.25v-3.75h1.25v-1.25h6.25v1.25h1.25v3.75h-1.25v1.25H34.49z M35.74,25.53h3.75v-3.75
+			h-3.75V25.53z"/>
+		<path style="&st3;" d="M45.74,25.53h1.25v1.25h-2.5v-1.25h-1.25v-5h2.5V25.53z M48.24,20.53v5h-1.25v-5H48.24z M51.99,20.53v5
+			h-1.25v1.25h-2.5v-1.25h1.25v-5H51.99z"/>
+		<path style="&st3;" d="M53.24,26.78v-6.25h7.5v1.25h1.25v5h-2.5v-5h-3.75v5H53.24z"/>
+		<path style="&st3;" d="M64.49,26.78v-1.25h2.5v-6.25h-1.25v-1.25h3.75v7.5h2.5v1.25H64.49z"/>
+		<path style="&st3;" d="M74.49,26.78v-1.25h-1.25v-3.75h1.25v-1.25h6.25v1.25h1.25v3.75h-1.25v1.25H74.49z M75.74,25.53h3.75v-3.75
+			h-3.75V25.53z"/>
+		<path style="&st3;" d="M84.49,26.78v-1.25h-1.25v-1.25h1.25v-1.25h5v-1.25h-5v-1.25h6.25v1.25h1.25v5H84.49z M85.74,25.53h3.75
+			v-1.25h-3.75V25.53z"/>
+		<path style="&st3;" d="M94.49,26.78v-1.25h-1.25v-3.75h1.25v-1.25h5v-2.5h2.5v8.75H94.49z M95.74,25.53h3.75v-3.75h-3.75V25.53z"
+			/>
+	</g>
+	<g style="&st2;">
+		<path style="&st3;" d="M29.49,40.78v-1.25h-1.25v-3.75h1.25v-1.25h7.5v1.25h-6.25v3.75h6.25v1.25H29.49z"/>
+		<path style="&st3;" d="M39.49,40.78v-1.25h-1.25v-3.75h1.25v-1.25h6.25v1.25h1.25v3.75h-1.25v1.25H39.49z M40.74,39.53h3.75v-3.75
+			h-3.75V39.53z"/>
+		<path style="&st3;" d="M48.24,40.78v-6.25h7.5v1.25h1.25v5h-2.5v-5h-3.75v5H48.24z"/>
+		<path style="&st3;" d="M61.99,40.78v-5h-2.5v-1.25h2.5v-2.5h2.5v2.5h2.5v1.25h-2.5v5H61.99z"/>
+		<path style="&st3;" d="M69.49,40.78v-1.25h-1.25v-3.75h1.25v-1.25h6.25v1.25h1.25v2.5h-6.25v1.25h5v1.25H69.49z M70.74,37.03h3.75
+			v-1.25h-3.75V37.03z"/>
+		<path style="&st3;" d="M78.24,40.78v-6.25h7.5v1.25h1.25v5h-2.5v-5h-3.75v5H78.24z"/>
+		<path style="&st3;" d="M91.99,40.78v-5h-2.5v-1.25h2.5v-2.5h2.5v2.5h2.5v1.25h-2.5v5H91.99z"/>
+	</g>
+</g>
 </svg>
