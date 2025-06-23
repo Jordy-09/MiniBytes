@@ -560,6 +560,10 @@ footer {
 
 
 
+
+
+
+
   
 /* Workshop page CSS */
 .workshop-header {
@@ -718,14 +722,24 @@ footer {
 /* Uitleg Workshop */
 .workshop-content {
   background-color: var(--wit);
-  padding: 50px 0;
-  margin-top: 2.5px;
+  padding: 200px 100px;
+  margin-top: 3px;
 }
 
-.workshop-content-container {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
+.workshop-content-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.workshop-content-text {
+  max-width: 50%;
+}
+.workshop-content-image img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .workshop-content h2 {
@@ -751,9 +765,127 @@ footer {
 
 .workshop-content-image img {
   max-width: 100%;
+  transform: scale(1);
   height: auto;
 }
 
+.workshop-content-stappen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.workshop-content-text2 {
+  margin: 150px 0 40px 0;
+  justify-content: center;
+}
+.workshop-content-flex img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.galerij h2 {
+  text-align: center;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  color: var(--wit);
+  margin-bottom: 20px;
+}
+.galerij p {
+  text-align: center;
+  font-family: "Cascadia Code", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+  color: var(--wit);
+  margin-bottom: 30px;
+}
+
+.galerij-text {
+  text-align: center;
+  margin: 100px;
+}
+
+
+.marquee-wrapper {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      padding: 20px 0;
+    }
+
+    .fade-overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 30px;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .fade-left {
+      left: 0;
+      background: linear-gradient(to right, var(--bg) 0%, transparent 100%);
+    }
+
+    .fade-right {
+      right: 0;
+      background: linear-gradient(to left, var(--bg) 0%, transparent 100%);
+    }
+
+    .marquee {
+      display: flex;
+      width: max-content;
+      align-self: flex-end;
+      animation-play-state: running;
+    }
+    
+    .marquee:hover {
+      animation-play-state: paused;
+    }
+
+    .marquee img {
+      width: 30vw;
+      height: auto;
+      margin: 0 10px;
+      object-fit: cover;
+      border-radius: 5px;
+      /* box-shadow: 0 0 6px rgba(0,0,0,0.5); */
+      transition: transform 0.3s ease;
+    }
+
+    .marquee img:hover {
+      transform: scale(1.1);
+    }
+
+    .scroll-left {
+      animation: scroll-left 20s linear infinite;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .scroll-right {
+      animation: scroll-right 20s linear infinite;
+    }
+
+    @keyframes scroll-right {
+      0% {
+        transform: translateX(-50%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
 
 
 
@@ -774,9 +906,27 @@ footer {
 
 
 
+@media (max-width: 600px) {
+  .gallerij-item {
+    flex: 0 0 140px;
+    height: 140px;
+  }
+  .gallerij-item img {
+    width: 110px;
+    height: 110px;
+  }
+}
 
-
-
+@media (max-width: 800px) {
+  .workshop-content-flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .workshop-content-image {
+    max-width: 100%;
+    flex: unset;
+  }
+}
 
 /*  Mobile css  */
 @media (max-width: 520px) {
@@ -1093,4 +1243,8 @@ footer {
     height: auto;
     margin-bottom: -100px;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -1,4 +1,4 @@
-  console.log("Hoi");
+console.log("Hoi");
 
   let slideImage = document.querySelector(".slide-image");
 
@@ -43,9 +43,30 @@ window.addEventListener('scroll', function () {
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
 
+// Automatische horizontale scroll voor de galerij (correcte classnaam)
+window.addEventListener('DOMContentLoaded', function() {
+  const container = document.querySelector('.galerij-container');
+  if (!container) return;
+  let scrollAmount = 1.2; // px per frame
+  let direction = 1;
+  let animationId;
+
+  function autoScroll() {
+    if (!container) return;
+    container.scrollLeft += scrollAmount * direction;
+    // Omkeren bij einde
+    if (container.scrollLeft + container.clientWidth >= container.scrollWidth - 2) {
+      direction = -1;
+    } else if (container.scrollLeft <= 0) {
+      direction = 1;
+    }
+    animationId = requestAnimationFrame(autoScroll);
+  }
+
+  container.addEventListener('mouseenter', () => cancelAnimationFrame(animationId));
+  container.addEventListener('mouseleave', () => autoScroll());
+
+  autoScroll();
+});
 
 
-
-//   slideImage.addEventListener("click", function () {
-//     slideImage.style.height = "0px";
-//   });
